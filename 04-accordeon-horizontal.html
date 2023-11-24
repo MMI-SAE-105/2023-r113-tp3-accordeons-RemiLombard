@@ -46,11 +46,11 @@
     </style>
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
   </head>
+
   <body>
     <h1>Accordéon horizontal</h1>
-
-    <ul id="accordeon">
-      <li>
+    <ul id="accordeon" x-data="{IsOpen:0}">
+      <li :class="{actif:IsOpen===1}" @click="IsOpen=1">
         <figure>
           <img src="https://picsum.photos/100?random=1" alt="" width="102">
           <figcaption>
@@ -59,16 +59,16 @@
           </figcaption>
         </figure>
       </li>
-      <li class="actif">
+      <li :class="{actif:IsOpen===2}" @click="IsOpen=2">
         <figure>
           <img src="https://picsum.photos/100?random=2" alt="" width="102">
           <figcaption>
-            <h3>Reprehenderit, ea. Debitis.</h3>
+            <h3>Debitis.</h3>
             <p>Odit consequuntur odio eius saepe a?</p>
           </figcaption>
         </figure>
       </li>
-      <li>
+      <li :class="{actif:IsOpen===3}" @click="IsOpen=3">
         <figure>
           <img src="https://picsum.photos/100?random=3" alt="" width="102">
           <figcaption>
@@ -77,7 +77,6 @@
           </figcaption>
         </figure>
       </li>
-    </ul>
-
+    </ul>    
   </body>
 </html>
