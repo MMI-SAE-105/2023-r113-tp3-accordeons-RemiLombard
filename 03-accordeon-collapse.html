@@ -9,5 +9,23 @@
   </head>
   <body>
     <h1>Accordéon avec <code>x-collapse</code></h1>
+    <div class="accordeon", x-data="{menuIsOpen: 0}">
+
+      <section>
+        <button @click="menuIsOpen =1">Bouton 1</button>
+        <p x-show="menuIsOpen===1", x-transition.scale.50.origin.left>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste amet incidunt quis ex excepturi cum veniam vero nobis harum consequuntur magni doloremque quasi libero, dolores aliquam possimus placeat reiciendis aspernatur?</p>
+      </section>
+
+      <section>
+        <button @click="menuIsOpen =2">Bouton 2</button>
+        <p x-show="menuIsOpen===2", x-transition.scale.50.origin.left>Nulla neque magna, mattis sit amet est quis, rhoncus placerat diam. Nam a mi sit amet lectus interdum finibus. Curabitur nec velit vel lorem finibus vehicula. Proin maximus, ipsum non.</p>
+      </section>
+
+      <section>
+        <button @click="menuIsOpen =3">Bouton 3</button>
+        <p x-show="menuIsOpen===3", x-transition.scale.50.origin.left>Donec placerat ex eu libero pretium, sit amet ornare urna finibus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur suscipit, ligula sit amet feugiat.</p>
+      </section>
+
+    </div>
   </body>
 </html>
