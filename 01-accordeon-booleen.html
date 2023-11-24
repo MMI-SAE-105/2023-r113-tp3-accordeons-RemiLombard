@@ -15,7 +15,7 @@
 
       <section x-data="{pIsOpen: false}">
         <button @click="pIsOpen =!pIsOpen">bouton 1</button>
-        <p x-show="pIsOpen">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias et tempore ut nostrum iure autem perspiciatis laborum. Quia eos sint assumenda nam suscipit vitae! Nulla quas at iste placeat eos.</p>
+        <p x-show="pIsOpen", x-transition.duration.400ms>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias et tempore ut nostrum iure autem perspiciatis laborum. Quia eos sint assumenda nam suscipit vitae! Nulla quas at iste placeat eos.</p>
       </section>
 
       <section>
