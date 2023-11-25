@@ -21,6 +21,22 @@
         <li role="tab" :class="{ actif: ouvert === 2 }" @click="ouvert = 2">Onglet 2</li>
         <li role="tab" :class="{ actif: ouvert === 3 }" @click="ouvert = 3">Onglet 3</li>
       </ul>
+    </div>
+
+    <div>
+      <div role="tabpanel" x-show="ouvert === 1">
+        <h1>Panneau 1</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem saepe repellat maxime sunt? Perspiciatis, maiores cupiditate. Molestiae ipsam delectus aliquam velit vel. Iste, ipsum provident odit vitae minima est enim?</p>
+      </div>
+      <div role="tabpanel" x-show="ouvert === 2">
+        <h1>Panneau 2</h1>
+        <p>Nisi error, voluptatum officiis dolore eum, aperiam rerum hic ratione, doloremque soluta modi iure deserunt id ab quidem corrupti repudiandae accusantium. Reprehenderit dolorem voluptates harum, ratione error eius odit. Obcaecati.</p>
+      </div>
+      <div role="tabpanel" x-show="ouvert === 3">
+        <h1>Panneau 3</h1>
+        <p>Explicabo, adipisci! Itaque nostrum quaerat, illum voluptate quas dolore rem eligendi quia perspiciatis nihil, laudantium, deleniti minima consequuntur repudiandae vel! Doloremque odit pariatur est in dolorum voluptate. Veniam, laboriosam quis?</p>
+      </div>
+    </div>
 
     </div>
 
